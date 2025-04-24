@@ -1,6 +1,8 @@
+package HW04;
+
 import java.util.Scanner;
 
-public class Main {
+public class HW04 {
 
     public static void main() {
         printText(); // Task 1
