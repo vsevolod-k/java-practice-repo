@@ -1,31 +1,45 @@
+import java.util.Scanner;
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main() {
         printText(); // Task 1
-        transformTemperature(25); // Task 2
-        calculateTriangleSquare(3, 5); // Task 3
+        transformTemperature(); // Task 2
+        calculateTriangleSquare(); // Task 3
     }
 
 
     public static void printText() {
-        System.out.println("Hello World!");
+        System.out.println("Hello User!");
+        System.out.println("-------------------------");
     }
 
-    public static void transformTemperature(double c) {
-        double tempCelsius = c;
+    public static void transformTemperature() {
+        System.out.println("Please enter any temperature in Celsius");
+        Scanner tempCelsius = new Scanner(System.in);
+        double userTemp  = tempCelsius.nextInt();
         double tempFahrenheit, tempKelvin;
 
-        tempFahrenheit = c * 9/5 + 32;
-        tempKelvin = c + 273.15;
+        tempFahrenheit = userTemp * 9/5 + 32;
+        tempKelvin = userTemp + 273.15;
 
-        System.out.println(tempCelsius + " Celsius: " + tempFahrenheit + " Fahrenheit; " + tempKelvin + " Kelvin");
+        System.out.println(userTemp + " Celsius: " + tempFahrenheit + " Fahrenheit; " + tempKelvin + " Kelvin");
+        System.out.println("-------------------------");
     }
 
-    public static void calculateTriangleSquare(double i, double i1) {
-        double triangleSquare;
+    public static void calculateTriangleSquare() {
+        System.out.println("Please enter cat");
+        Scanner scan = new Scanner(System.in);
 
-        triangleSquare = 0.5 * i * i1;
+        int userCat = scan.nextInt();
 
-        System.out.println(triangleSquare);
+        System.out.println("Please enter hypotenuse");
+
+        int userHypotenuse = scan.nextInt();
+
+        double triangleSquare = 0.5 * userCat * userHypotenuse;
+
+        System.out.println("Triangle square is: " + triangleSquare);
+        System.out.println("-------------------------");
     }
 }
