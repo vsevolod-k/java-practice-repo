@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class HW04 {
 
-    public static void main() {
+    public static void main(String[] args) {
         printText(); // Task 1
         transformTemperature(); // Task 2
         calculateTriangleSquare(); // Task 3
@@ -19,7 +19,7 @@ public class HW04 {
     public static void transformTemperature() {
         System.out.println("Please enter any temperature in Celsius");
         Scanner tempCelsius = new Scanner(System.in);
-        double userTemp  = tempCelsius.nextInt();
+        double userTemp  = tempCelsius.nextDouble();
         double tempFahrenheit, tempKelvin;
 
         tempFahrenheit = userTemp * 9/5 + 32;
@@ -30,16 +30,16 @@ public class HW04 {
     }
 
     public static void calculateTriangleSquare() {
-        System.out.println("Please enter cat");
+        System.out.println("Please enter the first cathetus");
         Scanner scan = new Scanner(System.in);
 
-        int userCat = scan.nextInt();
+        int firstCathetus = scan.nextInt();
 
-        System.out.println("Please enter hypotenuse");
+        System.out.println("Please enter the second cathetus");
 
-        int userHypotenuse = scan.nextInt();
+        int secondCathetus = scan.nextInt();
 
-        double triangleSquare = 0.5 * userCat * userHypotenuse;
+        double triangleSquare = 0.5 * firstCathetus * secondCathetus;
 
         System.out.println("Triangle square is: " + triangleSquare);
         System.out.println("-------------------------");
