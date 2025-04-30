@@ -2,15 +2,15 @@ package HW06;
 
 public class HW06 {
     public static void main(String[] args) {
-        CheckOddEven(4); // Task 1
-        PrintMonthInWordOption1(5); // Task 2 using If
-        PrintMonthInWordOption2(9); // Task 2 using Switch
-        CheckAbsValue(3, -9); // Task 3
-        IsTriangleIsosceles(3, 3, 5); // Task 4
-        ReturnMiddleCharacters("Java"); // Task 5
+        checkOddEven(4); // Task 1
+        printMonthInWordOption1(5); // Task 2 using If
+        printMonthInWordOption2(9); // Task 2 using Switch
+        checkAbsValue(3, -9); // Task 3
+        isTriangleIsosceles(3, 3, 5); // Task 4
+        returnMiddleCharacters("Java"); // Task 5
     }
 
-    public static void CheckOddEven(int userNum) {
+    public static void checkOddEven(int userNum) {
         // Перевірка, чи є число парним
         if (userNum % 2 == 0) {
             System.out.println("Even number"); // Виводимо, якщо число парне
@@ -22,7 +22,7 @@ public class HW06 {
         System.out.println("------------------------------------");
     }
 
-    public static void PrintMonthInWordOption1(int userMonth) {
+    public static void printMonthInWordOption1(int userMonth) {
         // Варіант вирішення задачі з використанням if statement
         // Виводимо назву місяця у вигляді трилітерного скорочення на основі номера місяця
         // Якщо номер не відповідає жодному з 1 по 12 — виводимо повідомлення про помилку
@@ -56,7 +56,7 @@ public class HW06 {
         System.out.println("------------------------------------");
     }
 
-    public static void PrintMonthInWordOption2(int userMonth) {
+    public static void printMonthInWordOption2(int userMonth) {
         // Варіант вирішення задачі з використанням switch
         // Виводимо назву місяця у вигляді трилітерного скорочення на основі номера місяця
         // Якщо номер не відповідає жодному з 1 по 12 — виводимо повідомлення про помилку
@@ -104,7 +104,7 @@ public class HW06 {
         System.out.println("------------------------------------");
     }
 
-    public static void CheckAbsValue(int firstNum, int secondNum) {
+    public static void checkAbsValue(int firstNum, int secondNum) {
         // Порівнюємо абсолютні значення двох чисел та виводимо відповідне повідомлення
         System.out.println(
                 Math.abs(firstNum) > Math.abs(secondNum) ? "The first number has a greater absolute value" :
@@ -114,7 +114,7 @@ public class HW06 {
         System.out.println("------------------------------------");
     }
 
-    public static void IsTriangleIsosceles(int a, int b, int c) {
+    public static void isTriangleIsosceles(int a, int b, int c) {
         // Перевіряємо, чи трикутник є рівнобедреним (якщо хоча б дві сторони рівні)
         System.out.println(
                 (a == b || a == c || b == c) ? "Triangle is isosceles" :
@@ -123,7 +123,7 @@ public class HW06 {
         System.out.println("------------------------------------");
     }
 
-    public static void ReturnMiddleCharacters(String userWord) {
+    public static void returnMiddleCharacters(String userWord) {
 
         if (userWord.length() % 2 > 0) { // перевірка довжини слова на непарність
             System.out.println("Incorrect word"); // повідомлення, якщо кількість символів непарна
